@@ -1,6 +1,9 @@
 /*
-This is a tutorial from gfg to understand how multithreading works. Anyone who comes to this project can read this to understand the bankers_algo.c program. 
-to compile : gcc multithread.c -lpthread
+This is a tutorial from gfg to understand how multithreading works. A thread is a single sequence stream within in a process. Because threads have some of the properties of processes, they are sometimes called lightweight processes. Threads are popular way to improve application through parallelism. 
+
+Anyone who comes to this project can read this to understand the bankers_algo.c program. 
+
+To compile : gcc multithread.c -lpthread
 */
 
 
