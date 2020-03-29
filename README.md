@@ -26,6 +26,9 @@ The banker will grant the request only if it leaves the system in a safe state.
 It is important that shared data be safe from concurrent access.
 To ensure safe access to shared data, you can use mutex locks.
 
+### Solution:
+[Bankers Algorithm](./bankers_algo.c)
+
 ### Compile manually:
 ```
 $ compile
@@ -95,3 +98,6 @@ Executing Processes...
 All Processes Finished
 
 ```
+
+### DISCLAIMER
+Resources have been added in the repository for developer's reference in order to understand the program better.
