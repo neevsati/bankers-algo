@@ -1,4 +1,4 @@
-// A Multithreaded Program that implements the banker's algorithm.
+// Banker's Algorithm
 
 #include <stdio.h>
 #include <unistd.h>
@@ -6,6 +6,7 @@
 #include <stdbool.h>
 #include <pthread.h>
 
+// variable declarations
 int nResources, nProcesses;
 int *resources;
 int **allocated;
@@ -17,10 +18,13 @@ int nProcessRan = 0;
 pthread_mutex_t lockResources;
 pthread_cond_t condition;
 
+// gets safe sequence
 bool getSafeSeq();
 
+// generates process code
 void* processCode(void* );
 
+// allocates resources
 int main(int argc, char** argv) {
         printf("\nNumber of processes? ");
         scanf("%d", &nProcesses);
